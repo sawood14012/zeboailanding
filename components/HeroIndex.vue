@@ -1,25 +1,29 @@
 <template>
-  <section id="pulsar" class="hero is-dark is-fullheight has-text-centered" style="background-color: black">
+  <section id="pulsar" class="hero is-dark is-fullheight has-text-centered" style="background-color: 	#1A1617">
     <div class="hero-body">
+    
       <img class="c-hero-image"
-           :src="require('@/assets/images/pulsar-bg-1920w.jpg')"
-           :srcset="require('@/assets/images/pulsar-bg-1280w.jpg') + ' 1280w, ' + require('@/assets/images/pulsar-bg-1920w.jpg') + ' 1920w'"
-           alt="Pulsar">
+           :src="require('@/assets/images/v.gif')"
+           alt="zebo.ai">
 
       <canvas id="space" class="space"></canvas>
 
       <div class="container">
         <h1 class="title is-uppercase">
-          Pulsar
+          Zebo.ai
         </h1>
-        <h2 class="subtitle">
-          We make modern web applications and websites.
-        </h2>
-        <p class="field">
-          <a href="#about" class="button is-large is-light is-outlined" aria-label="View more" v-smooth-scroll>
-            <span class="icon is-medium"><i class="fa fa-angle-down"></i></span>
-          </a>
-        </p>
+      
+         
+        <h2><vue-typer class="vue-typer subtitle" 
+        :text="['Ground Breaking Advances','In Medical AI', 'Coming Soon..!']" 
+        :pre-type-delay="800" 
+        :type-delay="160" 
+        :pre-erase-delay="1000" 
+        :erase-delay="80" 
+        erase-style="backspace" 
+        caret-animation="solid">
+        </vue-typer></h2>
+      
       </div>
     </div>
   </section>
@@ -126,6 +130,75 @@
 </script>
 
 <style lang="scss" scoped>
+
+.vue-typer {
+  background-color:white;
+  font-size:30px;
+  color:white;
+  /* Styles for the vue-typer container
+     e.g. font-family, font-size  */
+
+  .custom.char {
+    /* Styles for each character
+       e.g. color, background-color */
+       color: #D4D4BD;
+       
+
+    &.typed {
+      /* Styles specific to typed characters
+         i.e. characters to the left of the caret */
+         color: #D4D4BD;
+    }
+    &.selected {
+      color: #E91E63;
+      /* Styles specific to selected characters
+         i.e. characters to the right of the caret while VueTyper's
+              'eraseStyle' is set to a selection-based style */
+    }
+    &.erased {
+      /* Styles specific to erased characters
+         i.e. characters to the right of the caret while VueTyper's
+              'eraseStyle' is set to a non-selection-based style */
+    }
+  }
+
+  .custom.caret {
+    /* Styles for the caret
+       e.g. background-color, animation, display */
+
+    &.pre-type {
+      /* Styles for the caret when it is idle before typing
+         i.e. before a string starts being typed, during 'preTypeDelay' */
+    }
+    &.pre-erase {
+      /* Styles for the caret when it is idle before erasing
+         i.e. before a string starts being erased, during 'preEraseDelay' */
+    }
+    &.idle {
+      /* Styles for the caret when it is idle, but VueTyper has not yet completed typing
+         i.e. when 'pre-type' or 'pre-erase' is set, but not 'complete' */
+    }
+    &.typing {
+      color:white;
+      /* Styles for the caret while VueTyper is typing
+         i.e. when the caret is moving forwards */
+    }
+    &.selecting {
+      /* Styles for the caret while VueTyper is selecting
+         i.e. when the caret is moving backwards and 'eraseStyle' is
+         set to a selection-based style */
+    }
+    &.erasing {
+      /* Styles for the caret while VueTyper is erasing
+         i.e. when the caret is moving backwards and 'eraseStyle' is
+         set to a non-selection-based style */
+    }
+    &.complete {
+      /* Styles for the idle caret when VueTyper has finished all typing/erasing */
+    }
+  }
+}
+
   .hero {
     position: relative;
     overflow: hidden;
@@ -138,6 +211,126 @@
     letter-spacing: 4rem;
     margin-left: 4rem;
   }
+  @media (min-width: 300px) and (max-width: 320px) {
+ .title{
+   font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 5rem;
+    margin-left: 4rem;
+ }
+ .c-hero-image {
+   top:150px;
+  object-position: center;
+ }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+ .title{
+   font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 6.6rem;
+    margin-left: 6rem;
+ }
+ .c-hero-image {
+   -webkit-align-items: center;
+   align-items: center;
+ }
+}
+@media (min-width:768px)and (max-width: 900px)  {
+ .title{
+   font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 3.4rem;
+    margin-left: 6rem;
+ }
+ .c-hero-image {
+   -webkit-align-items: center;
+   align-items: center;
+ }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+ .title{
+   font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 7.5rem;
+    margin-left: 6.5rem;
+ }
+ .c-hero-image {
+   -webkit-align-items: center;
+   align-items: center;
+ }
+}
+
+@media (min-width: 426px) and (max-width: 447px) {
+ .title{
+   font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 8rem;
+    margin-left: 6.5rem;
+ }
+ .c-hero-image {
+   -webkit-align-items: center;
+   align-items: center;
+ }
+}
+@media (min-width: 447px) and (max-width: 500px) {
+ .title{
+   font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 9rem;
+    margin-left: 7rem;
+ }
+ .c-hero-image {
+   -webkit-align-items: center;
+   align-items: center;
+ }
+}
+@media (min-width: 500px) and (max-width: 546px) {
+ .title{
+   font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 10rem;
+    margin-left: 8rem;
+ }
+ .c-hero-image {
+   -webkit-align-items: center;
+   align-items: center;
+ }
+}
+@media (min-width: 547px) and (max-width: 600px) {
+ .title{
+   font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 15rem;
+    margin-left: 13rem;
+ }
+ .c-hero-image {
+   -webkit-align-items: center;
+   align-items: center;
+ }
+}
+@media (min-width: 601px) and (max-width: 767px) {
+ .title{
+   font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 20rem;
+    margin-left: 19rem;
+ }
+ .c-hero-image {
+   -webkit-align-items: center;
+   align-items: center;
+ }
+}
 
   .button {
     border-radius: 50%;
@@ -158,8 +351,10 @@
     left: 0;
     min-width: 100%;
     min-height: 100%;
-    object-fit: cover;
+    height:100%;
+    
+    object-fit: contain;
     object-position: top center;
-    opacity: 0.5
+    opacity: 0.4
   }
 </style>

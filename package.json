@@ -1,8 +1,8 @@
 {
-  "name": "pulsar-landing",
+  "name": "zebo.ai",
   "version": "1.0.1",
-  "description": "Nuxt.js project",
-  "author": "Mathieu Morainville <mathieumorainville@hotmail.com>",
+  "description": "Ground breaking advances in medical ai comming soon",
+  "author": "Meer Sawood",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -20,7 +20,8 @@
     "intersection-observer": "^0.4.3",
     "nuxt": "^2.8.1",
     "smoothscroll-polyfill": "^0.3.6",
-    "vee-validate": "^2.2.14"
+    "vee-validate": "^2.2.14",
+    "vue-typer": "^1.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

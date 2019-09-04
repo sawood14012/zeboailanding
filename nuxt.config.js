@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Pulsar',
+    title: 'Zebo.ai',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Pulsar - We make modern web applications and websites' }
+      { hid: 'description', name: 'description', content: 'Ground breaking advances in medical ai comming soon' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -50,9 +50,7 @@ module.exports = {
   plugins: [
     { src: '~/plugins/scroll-spy.js', ssr: false },
     { src: '~/plugins/smooth-scroll.js', ssr: false },
-    '~/plugins/vee-validate.js'
-  ],
-  modules: [
-    ['@nuxtjs/google-analytics', {ua: 'UA-99632110-3'}]
+    '~/plugins/vee-validate.js',
+    { src: '~/plugins/vuetyper.js', ssr: false }
   ]
 }

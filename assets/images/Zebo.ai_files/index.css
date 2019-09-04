@@ -1,0 +1,179 @@
+.vue-typer[data-v-0304ee2d] {
+  background-color: white;
+  font-size: 30px;
+  color: white;
+  /* Styles for the vue-typer container
+     e.g. font-family, font-size  */
+}
+.vue-typer .custom.char[data-v-0304ee2d] {
+    /* Styles for each character
+       e.g. color, background-color */
+    color: #D4D4BD;
+}
+.vue-typer .custom.char.typed[data-v-0304ee2d] {
+      /* Styles specific to typed characters
+         i.e. characters to the left of the caret */
+      color: #D4D4BD;
+}
+.vue-typer .custom.char.selected[data-v-0304ee2d] {
+      color: #E91E63;
+      /* Styles specific to selected characters
+         i.e. characters to the right of the caret while VueTyper's
+              'eraseStyle' is set to a selection-based style */
+}
+.vue-typer .custom.char.erased[data-v-0304ee2d] {
+      /* Styles specific to erased characters
+         i.e. characters to the right of the caret while VueTyper's
+              'eraseStyle' is set to a non-selection-based style */
+}
+.vue-typer .custom.caret[data-v-0304ee2d] {
+    /* Styles for the caret
+       e.g. background-color, animation, display */
+}
+.vue-typer .custom.caret.pre-type[data-v-0304ee2d] {
+      /* Styles for the caret when it is idle before typing
+         i.e. before a string starts being typed, during 'preTypeDelay' */
+}
+.vue-typer .custom.caret.pre-erase[data-v-0304ee2d] {
+      /* Styles for the caret when it is idle before erasing
+         i.e. before a string starts being erased, during 'preEraseDelay' */
+}
+.vue-typer .custom.caret.idle[data-v-0304ee2d] {
+      /* Styles for the caret when it is idle, but VueTyper has not yet completed typing
+         i.e. when 'pre-type' or 'pre-erase' is set, but not 'complete' */
+}
+.vue-typer .custom.caret.typing[data-v-0304ee2d] {
+      color: white;
+      /* Styles for the caret while VueTyper is typing
+         i.e. when the caret is moving forwards */
+}
+.vue-typer .custom.caret.selecting[data-v-0304ee2d] {
+      /* Styles for the caret while VueTyper is selecting
+         i.e. when the caret is moving backwards and 'eraseStyle' is
+         set to a selection-based style */
+}
+.vue-typer .custom.caret.erasing[data-v-0304ee2d] {
+      /* Styles for the caret while VueTyper is erasing
+         i.e. when the caret is moving backwards and 'eraseStyle' is
+         set to a non-selection-based style */
+}
+.vue-typer .custom.caret.complete[data-v-0304ee2d] {
+      /* Styles for the idle caret when VueTyper has finished all typing/erasing */
+}
+.hero[data-v-0304ee2d] {
+  position: relative;
+  overflow: hidden;
+}
+.title[data-v-0304ee2d] {
+  font-size: 6rem;
+  color: white;
+  mix-blend-mode: difference;
+  letter-spacing: 4rem;
+  margin-left: 4rem;
+}
+@media (min-width: 300px) and (max-width: 320px) {
+.title[data-v-0304ee2d] {
+    font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 5rem;
+    margin-left: 4rem;
+}
+}
+@media (min-width: 321px) and (max-width: 375px) {
+.title[data-v-0304ee2d] {
+    font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 6.6rem;
+    margin-left: 6rem;
+}
+}
+@media (min-width: 768px) and (max-width: 900px) {
+.title[data-v-0304ee2d] {
+    font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 3.4rem;
+    margin-left: 6rem;
+}
+}
+@media (min-width: 376px) and (max-width: 425px) {
+.title[data-v-0304ee2d] {
+    font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 7.5rem;
+    margin-left: 6.5rem;
+}
+}
+@media (min-width: 426px) and (max-width: 447px) {
+.title[data-v-0304ee2d] {
+    font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 8rem;
+    margin-left: 6.5rem;
+}
+}
+@media (min-width: 447px) and (max-width: 500px) {
+.title[data-v-0304ee2d] {
+    font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 9rem;
+    margin-left: 7rem;
+}
+}
+@media (min-width: 500px) and (max-width: 546px) {
+.title[data-v-0304ee2d] {
+    font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 10rem;
+    margin-left: 8rem;
+}
+}
+@media (min-width: 547px) and (max-width: 600px) {
+.title[data-v-0304ee2d] {
+    font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 15rem;
+    margin-left: 13rem;
+}
+}
+@media (min-width: 601px) and (max-width: 767px) {
+.title[data-v-0304ee2d] {
+    font-size: 4rem;
+    color: white;
+    mix-blend-mode: difference;
+    letter-spacing: 20rem;
+    margin-left: 19rem;
+}
+}
+.button[data-v-0304ee2d] {
+  border-radius: 50%;
+}
+.space[data-v-0304ee2d] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  mix-blend-mode: screen;
+}
+.c-hero-image[data-v-0304ee2d] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+  opacity: 0.5;
+}
+
