@@ -249,6 +249,7 @@
  .c-hero-image {
    -webkit-align-items: center;
    align-items: center;
+
  }
 }
 
@@ -353,8 +354,14 @@
     min-height: 100%;
     height:100%;
     
-    object-fit: contain;
+    object-fit: cover;
     object-position: top center;
     opacity: 0.4
   }
+
+@media all and (min-width: 1000px) {
+  .c-hero-image {
+    object-fit: contain;
+  }
+}
 </style>
